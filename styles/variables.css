@@ -3,20 +3,26 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-font: 'IBM Plex mono';
+  --main-font: "IBM Plex mono";
+  --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: url("../images/cover-image-dark.png");
     --accent-color: #ff0070;
+    --menu-list-color: #ff0070;
     --main-text-color: #f1b2ce;
     --background-color: #000028;
     --header-name-color: #db00ff;
-    --heder-rec-color:#db00ff;
-    --header-hover-color:#ff0070;
+    --heder-rec-color: #ff0070;
+    --description-text-color: #000028;
+    --shadow-name-color: #ff0070;
+    --section-title-color: #ff0070;
+    --section-article-title-color: #000028;
+    --header-hover-color: rgba(255, 0, 112, 0.4);
   }
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,11 +33,11 @@
     --main-text-color: #353430;
     --background-color: #fff1f7;
     --header-name-color: #ffc2e6;
-    --header-shadow-color: #ff0070;
-    --description-text-color:#000028;
-    --heder-rec-color:#fff1f7;
-    --header-hover-color:#000028;
+    --description-text-color: #353430;
+    --heder-rec-color: #fff1f7;
+    --shadow-name-color: #ff0070;
+    --section-title-color: #353430;
+    --section-article-title-color: #353430;
+    --header-hover-color: rgba(50, 49, 45, 0.4);
   }
-
 }
-
