@@ -1,15 +1,8 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-:root {
-  --main-font: "IBM Plex mono";
-  --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
+    --main-font: "IBM Plex mono";
+    --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --background-image: url("../images/cover-image-dark.png");
     --accent-color: #ff0070;
     --menu-list-color: #ff0070;
@@ -22,12 +15,16 @@
     --section-title-color: #ff0070;
     --section-article-title-color: #000028;
     --header-hover-color: rgba(255, 0, 112, 0.4);
+    --header-focus-color: #ff0070;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url("../images/cover-image-light.png");
+    --main-font: "IBM Plex mono";
+    --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --font-size-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --accent-color: #ff8dcb;
     --menu-list-color: #353430;
     --main-text-color: #353430;
@@ -39,5 +36,6 @@
     --section-title-color: #353430;
     --section-article-title-color: #353430;
     --header-hover-color: rgba(50, 49, 45, 0.4);
+    --header-focus-color: #353430;
   }
 }

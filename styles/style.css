@@ -84,7 +84,7 @@
   outline: none;
 }
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--header-hover-color);
+  border-bottom: 1px solid var(--header-focus-color);
 }
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -146,10 +146,6 @@
     margin-bottom: 21.4%;
     margin-left: -1.2%;
     line-height: 0.8em;
-  }
-  .header__rec {
-    top: 1.5%;
-    right: 10%;
   }
   .decorated-zone::after {
     right: 2.6%;
@@ -272,39 +268,44 @@
 .section__article-text-link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
-.section__two-columns {
+.section__reason,
+.section__decision {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.section__two-columns .section__title {
+.section__reason .section__title,
+.section__decision .section__title {
   flex: 0 0 auto;
   width: 33%;
 }
 
 @media (width < 1024px) and (width >= 768px) {
-  .section__two-columns .section__title {
+  .section__reason .section__title,
+  .section__decision .section__title {
     width: 32%;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .section__two-columns .section__title {
+  .section__reason .section__title,
+  .section__decision .section__title {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-.section__two-columns .section__article-list {
+.section__reason .section__article-list,
+.section__decision .section__article-list {
   flex: 0 0 auto;
   width: 66%;
   flex-direction: column;
   gap: 20px;
 }
-.section__three-columns .section__title {
+.section__explanation .section__title {
   width: 30%;
 }
-.section__three-columns .section__article-item {
+.section__explanation .section__article-item {
   flex: 0 0 auto;
   width: 32%;
 }
@@ -329,10 +330,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .section__two-columns .section__article-list {
+  .section__reason .section__article-list,
+  .section__decision .section__article-list {
     width: 100%;
   }
-  .section__three-columns .section__title {
+  .section__explanation .section__title {
     width: 100%;
   }
 }
@@ -341,22 +343,23 @@
   .section__title {
     width: 35%;
   }
-  .section__two-columns .section__article-list {
+  .section__reason .section__article-list,
+  .section__decision .section__article-list {
     width: 65%;
   }
 }
 
 @media (width >= 1024px) {
-  .section__three-columns .section__article-list {
+  .section__explanation .section__article-list {
     gap: 19px;
   }
 }
 
 @media (width < 1024px) and (width >= 375px) {
-  .section__three-columns .section__article-list {
+  .section__explanation .section__article-list {
     gap: 20px;
   }
-  .section__three-columns .section__article-item {
+  .section__explanation .section__article-item {
     flex: 1 0 auto;
     width: 100%;
   }
