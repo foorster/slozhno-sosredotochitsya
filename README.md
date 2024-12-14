@@ -10,6 +10,8 @@
 
 ![3й](https://github.com/user-attachments/assets/b1b1302f-b05f-4061-b50a-156a1cdd34c8)
 
+![ttttt](https://github.com/user-attachments/assets/ba8281db-0ac3-47ea-94dd-ca5195e41a60)
+
 ### Установка и запуск
 Для установки и запуска проекта необходимо выполнить команды
 ```
